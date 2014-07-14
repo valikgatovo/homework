@@ -1,0 +1,32 @@
+
+#include <iostream>
+
+using namespace std;
+void main()
+{
+	int A =7, i, j;
+
+	cout << " pn  vt  sr  ch  pt  sb  vs \n";
+
+	for (i = 1, j = 1; i < 31; i++)
+	{
+		if (i == 1 && j < A)
+		{
+			cout << "    ";
+			i--;
+		}
+		else{
+			cout << " ";
+			if (i <10)cout << " ";
+			cout << i << " ";
+		}
+
+		if (++j >7)
+		{
+			j = 1;
+			cout << "\n\n";
+		}
+	}
+	
+	
+}
