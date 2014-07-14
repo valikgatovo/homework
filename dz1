@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+	setlocale(LC_ALL, "Rus");
+	cout << "Введите первое число \n";
+	int g;
+	cin >> g;
+	cout << "Введите второе число \n";
+	int i;
+	cin >> i;
+	float Amount;
+	float Amount2;
+	int Num3 = 2;
+	Amount = g + i;
+	Amount2 = Amount / Num3;
+
+	cout << "Среднефрифметическое 2-ух чисел?\n";
+	
+
+
+	cout << "Равно:" << Amount2 << "\n";
+
+
+
+}
