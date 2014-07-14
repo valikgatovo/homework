@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+void main(){
+	for (int i = 2; i<1001; i++){
+		for (int m = i - 1; m>1; m--){
+			if (i%m == 0)
+				break;
+			if (m == 2)
+				cout << i << "\n";
+		}
+	}
+}
