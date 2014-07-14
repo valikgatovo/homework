@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int a;
+	const int s = 10;
+	int mas[s] = { 4, 9, 3, 4, 8, 1, 9, 1, 2, 3 };
+	int mas2[s] = { 0 };
+	for (int i = 0; i <= s - 1; i++){
+		a = mas[i];
+		for (int j = i + 1; j <= s - 1; j++){
+			if (mas[j] == a)
+				mas2[i] = a;
+		}
+	}
+	for (int i = 0; i <= s - 1; i++){
+		for (int j = i + 1; j <= s - 1; j++){
+			if (mas2[j] == mas2[i])
+				mas2[i] = 0;
+		}
+	}
+	for (int j = 0; j <= s - 1; j++){
+		if (mas2[j] != 0)
+			cout << mas2[j] << endl;
+	}
+}
