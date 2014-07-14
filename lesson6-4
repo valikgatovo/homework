@@ -1,0 +1,18 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+int main(){
+	setlocale(LC_ALL, "RUSSIAN");
+	srand(time(NULL));
+    int mas[10], min;
+	for (int i = 0; i<10; i++)
+		mas[i] = rand() % 100;
+	cout << "числовой массив: ";
+	for (int i = 0; i<10; i++)
+		cout << mas[i] << " ";
+	min = mas[0];
+	for (int i = 0;i<10; i+=2) {
+		if (mas[i] < min)
+			min = mas[i];
+	}
+    cout <<endl<< "Наименьшее число в массиве: " << min << endl;
